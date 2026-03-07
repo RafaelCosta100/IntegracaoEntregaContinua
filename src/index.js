@@ -13,6 +13,10 @@ app.get('/api/test', (req, res) => {
   res.send({ message: 'Endpoint de teste'});
 });
 
+app.get('/api/test10', (req, res) => {
+  res.send({ message: 'Endpoint dp novo teste'});
+});
+
 app.get('/api/test-2', (req, res) => {
   res.send({ message: 'Endpoint de teste 2'});
 });
