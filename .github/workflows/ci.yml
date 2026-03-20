@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - development
-
+  workflow_dispatch:
 jobs:
   version:
     runs-on: ubuntu-latest
