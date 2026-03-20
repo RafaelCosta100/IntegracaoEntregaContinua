@@ -116,6 +116,6 @@ jobs:
           username: ${{ secrets.EMAIL_ORIGEM }}
           password: ${{ secrets.SENHA_EMAIL }}
           subject: "Falha no workflow do GitHub Actions"
-          to: ${{ secrets.MAIL_DESTINO }}
-          from: "${{ secrets.MAIL_DESTINO}} - Github Actions"
+          to: ${{ secrets.EMAIL_DESTINO }}
+          from: "${{ secrets.EMAIL_DESTINO}} - Github Actions"
           body: "Ocorreu uma FALHA no build do repositorio ${{ github.repository }}! Verifique o log do Github Actions para corrigir o erro."
