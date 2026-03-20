@@ -1,5 +1,5 @@
 {
-  "name": "api-exemplo",
+  "name": "api-exemplo", 
   "version": "0.1.0",
   "description": "Exemplo de API NodeJs para teste de uma pipeline CI",
   "main": "src/index.js",
