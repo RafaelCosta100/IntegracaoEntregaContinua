@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.get('/api', (req, res) => {
 
-  res.send('Hello world!');
+  res.send('Hello world 1010!');
 }); 
 
 app.get('/api/test', (req, res) => {
