@@ -52,7 +52,7 @@ jobs:
           fi
 
       - name: Calcular nova versão
-        id: calculate_version
+        id: calculate_version  # Mudei o ID para ficar mais claro
         run: |
           git fetch --tags
           # Pega a última tag ou define v0.0.0
