@@ -106,7 +106,7 @@ jobs:
           git push origin ${{ github.ref_name }} --tags
 
           #parte 3
-          - name: Send mail
+      - name: Send mail
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
