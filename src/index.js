@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-  res.send('olá mundo sem bugs');
+  res.send('olá mundo sem bugs versão nova');
 });
 
 app.get('/api/test', (req, res) => {
