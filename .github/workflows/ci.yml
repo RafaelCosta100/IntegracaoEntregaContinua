@@ -111,11 +111,11 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
-          server_port: 465
+          server_port: 587
           secure: true
           username: ${{ secrets.EMAIL_ORIGEM }}
           password: ${{ secrets.SENHA_EMAIL }}
-          subject: "Falha no workflow do GitHub Actions"
+          subject: Falha no workflow do GitHub Actions
           to: ${{ secrets.EMAIL_DESTINO }}
-          from: "${{ secrets.EMAIL_DESTINO}} - Github Actions"
+          from: ${{ secrets.EMAIL_DESTINO}}
           body: "Ocorreu uma FALHA no build do repositorio ${{ github.repository }}! Verifique o log do Github Actions para corrigir o erro."
